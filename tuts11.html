@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: blue;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid blueviolet;
+            height: 100px;
+            box-sizing: border-box;
+            /* box-sizing: border-box means padding+border=200 */
+        }
+        /* Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin */
+        /* Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+     .box2 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"> Here is a box
+
+    </div>
+    <div class="box box2"> Here is another box
+
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!-- making a Card -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+            padding: 45px;
+        }
+
+        .card {
+            background-color: white;
+            width: 370px;
+            height: 590px;
+            border-radius: 5px;
+        }
+
+        .image {
+            padding: 7px;
+        }
+
+        .image img {
+            border-radius: 5px;
+
+        }
+
+        .content {
+            padding: 7px 13px;
+            font-family: poppins;
+        }
+
+        .capsules {
+            padding: 7px 13px;
+        }
+
+        .capsules span {
+            border: 2px solid burlywood;
+            padding: 3px 4px;
+            font-size: 15px;
+            border-radius: 13px;
+            font-family: 'Zilla Slab', serif;
+            margin-left: 2px;
+
+        }
+
+        .content p {
+            margin-top: 3px;
+            font-size: 16px;
+            color: gray;
+            font-family: 'Poppins', sans-serif;
+            ;
+        }
+
+        .button {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .button button {
+            margin-top: 20px;
+            padding: 6px 13px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 11px;
+            background-color: rgb(228, 214, 64);
+            color: rgb(85, 73, 4);
+            font-size: 15px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="356px" height="280px" src="img1.jfif" alt="">
+        </div>
+        <div class="capsules">
+            <span><strong>Nature</strong></span>
+            <span><strong>Lake</strong></span>
+        </div>
+        <div class="content">
+            <h1>Laos</h1>
+            <p>Discover Laos, a serene gem in Southeast Asia, where ancient temples adorn lush landscapes along the
+                Mekong River. Immerse yourself in the timeless allure of Luang Prabang, a UNESCO-listed town blending
+                tradition and colonial charm. Experience warm hospitality and untouched beauty in this enchanting
+                destination.
+
+            </p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>

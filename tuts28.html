@@ -1,0 +1,57 @@
+<!-- CSS Transform -->
+<!-- video #42 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.25turn); */
+            /* rotate arund x-axis , similarly in y ans z axis*/
+            /* transform: rotatex(40deg); */
+             /* transform: scale(1.6); */
+            /* rotate arund x-axis , similarly in y ans z axis*/
+            /* transform: scalex(1.6); */
+            /* transform: skew(5deg); */
+            /* simliary in X and Y axis but not in Z-axis */
+            /* transform: translate(34%); */
+            /* applying multiple transform */
+            transform: rotateX(40deg) skew(5deg) translateY(80px);
+            transform-origin: 0% 0%;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 1oovw;
+            height: 80vh;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        
+       /* html is  root element*/ 
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* vw is used instead of px(pixel) so that it can adjust to the screen size */
+        .box{
+            box-sizing: border-box;
+            color: brown;
+            border: 2px solid black;
+            width: 100vw;
+            background-color: greenyellow;
+            height: 5vw;
+            margin: auto;
+            font-size: 16px;
+        }
+       
+        .container{box-sizing: border-box;
+            color: brown;
+            border: 2px solid rgb(11, 16, 17);
+            width: 80vw;
+            background-color: greenyellow;
+            margin: auto;
+            font-size: 18 px;
+        }
+         /* em is used instead of px(pixel)  in font size so that it can adjust to the screen size */
+        .container{
+            font-size: 1.8em;
+            min-height:100vmin;
+        }
+        /* 1.8 em = 1.8 X 18px(inherited value)
+        1.8 rem = 1.8 X 12px (root value i.e HTML)*/
+       .mycont{
+        background-color: rgb(201, 171, 171);
+        box-sizing: border-box;
+        border: 2px black;
+        font-size: 2rem;
+        width: 80vw;
+        text-align: center;
+      margin: 23px auto;
+        
+       }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="box">This is a box</div>
+    <br>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ratione totam. At provident quisquam, temporibus rem quia minima ipsum quo necessitatibus est ducimus!</div>
+    <br>
+    <div class="mycont"> this is another container</div>
+</body>
+</html>

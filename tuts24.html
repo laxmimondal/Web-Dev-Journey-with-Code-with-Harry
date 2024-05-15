@@ -1,0 +1,70 @@
+<!-- video 35-->
+<!--More on CSS Selectors-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color:red;
+        } */
+        /* .boxes *{
+            color: rgb(89, 0, 255);
+            border: 2px solid black;
+        } */
+        /* grouping of selectors */
+        /* .box,[data-color="primary"]{
+            margin-top: 45px;
+        } */
+        /* .box:nth-child(even){
+            background-color: blue;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: brown;
+        } */
+        /* element inserting dynamically using CSS Before and After */
+        /* These are pseudo elemeents */
+        .boxes::before{
+            content: "Hallo";
+            color: red;
+        }
+        .boxes::after{
+            content: "tchuss";
+            color: blue;
+        }
+       ::selection{
+        color: red;
+        background-color: rgb(161, 151, 151);
+       }
+       .box::first-letter{
+        color: rgb(153, 0, 255);
+        font-size: 45px;
+       }
+       input::placeholder{
+        font-size:15px;
+        color: rgb(42, 165, 83);
+       }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo
+            accusamus eum repellat magnam? Illo, ipsam iste! Dolor, tempora. Ducimus eveniet, voluptates tempora totam
+            eum deleniti harum voluptatem cum similique dolore repellendus? Sequi doloribus saepe nisi quae quod
+            voluptate mollitia illo aspernatur libero
+
+        </div>
+        <div class="box">Hey I am box</div>
+        <div class="box">Hey I am box</div>
+<input type="text" placeholder="Type your Name here">
+    </div>
+</body>
+
+</html>
